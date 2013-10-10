@@ -19,12 +19,12 @@
  *
  * @package    mahara
  * @subpackage theme
- * @author     Julian (@moodleman) Ridden
+ * @author     Marc Català
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
  * @copyright  (C) 2006-2013 Catalyst IT Ltd http://catalyst.net.nz
  */
 
 $theme = new StdClass;
 
-$theme->displayname = 'Essential';
+$theme->displayname = 'IOC';
 $theme->parent      = 'raw';
