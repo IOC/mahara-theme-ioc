@@ -35,7 +35,7 @@
 
 /******************** Body ********************/
 body, body#micro{
-    border-top:3px solid #29a1c4;
+    border-top:3px solid #009cda;
     font-family: "PT Sans", Arial, Helvetica, sans-serif;
     background: white url(../images/body.png) repeat;
     line-height: 25px;
@@ -59,12 +59,12 @@ h2 {
 }
 /******************** General text ********************/
 a, a:visited, a:link, a:active {
-    color: #2cacc7;
+    color: #005388;
     text-decoration: none;
 }
 a:hover, a:focus {
-    color: #26a1bb;
-    text-decoration: underline;
+    color: #002a45;
+    text-decoration: none;
 }
 /* some common listing text styles */
 .title {
@@ -1073,10 +1073,16 @@ border: 1px solid #B3B3B3;
     overflow: hidden;
 }
 /******************** Footer ********************/
+
+#micro #footer {
+    background: url(../images/powered-by-mahara-small.png) no-repeat 10px 5px;
+    min-height: 35px;
+}
+
 #footer-wrap {
     color: #ccc;
     background: #000;
-    border-top: 3px solid #30add1;
+    border-top: 3px solid #009cda;
     padding: 10px;
 }
 #footer a,

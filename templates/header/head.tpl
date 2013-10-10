@@ -35,7 +35,7 @@
 	<link href='//fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 	<link href='//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="{$WWWROOT}js/css.js?v={$RELEASE}"></script>
-    <link rel="shortcut icon" href="{$WWWROOT}favicon.ico?v={$RELEASE}" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="{theme_url filename='images/favicon.ico'}?v={$RELEASE}" type="image/vnd.microsoft.icon">
     <link rel="image_src" href="{$sitelogo}?v={$RELEASE}">
   <!-- Responsive design -->
         <script type="text/javascript" src="{$WWWROOT}js/rd-nav.js?v={$RELEASE}"></script>
