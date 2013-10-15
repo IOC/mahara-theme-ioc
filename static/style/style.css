@@ -292,6 +292,9 @@ div.pagination a {
 .ie8 #container {
     min-width: 960px;
 }
+#view, #page {
+    font-size: 1.25em;
+}
 /******************** Header ********************/
 
 /******************** Small header ********************/
