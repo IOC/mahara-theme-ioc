@@ -295,6 +295,12 @@ div.pagination a {
 #view, #page {
     font-size: 1.25em;
 }
+
+#view p,
+#view p span,
+#view li {
+    line-height: 1.3em;
+}
 /******************** Header ********************/
 
 /******************** Small header ********************/
