@@ -255,6 +255,9 @@ label {
     padding: 0 1% 0 0;
 }
 /* MAIN CONTENT */
+#view, #page {
+    font-size: 1.25em;
+}
 /* Message */
 .message,
 #messages {
