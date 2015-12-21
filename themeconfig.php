@@ -3,14 +3,15 @@
  *
  * @package    mahara
  * @subpackage core
- * @author     Catalyst IT Ltd
+ * @author     Marc Català
+ * @
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL version 3 or later
  * @copyright  For copyright information on Mahara, please see the README file distributed with this software.
  */
 
 $theme = new StdClass;
 
-$theme->displayname  = 'Ocean';
+$theme->displayname  = 'IOC';
 $theme->formrenderer = 'div';
 
 /* Set parent to boolean FALSE  to specify the theme has no parent */
