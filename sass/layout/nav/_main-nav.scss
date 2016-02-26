@@ -1,8 +1,10 @@
 // Primary Nav
 // overriding/additional styles for theme
 .main-nav {
+    margin-top: 3px;
     > .container {
         background-color: $brand-primary-light;
+        background-image: url($ioc-bgimage);
 
         @media (min-width: $screen-sm-min) {
             background-color: $brand-primary-mid;
@@ -62,9 +64,10 @@
 
            // If this link is the current page or section
             .active > a {
-                color: $gray-dark;
+                color: #000;
                 border-color: #fff;
                 background-color: #fff;
+                background-image: url($ioc-bgimage);
                 &:hover,
                 &:focus,
                 &:active {
