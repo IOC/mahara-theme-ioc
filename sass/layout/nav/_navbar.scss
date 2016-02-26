@@ -1,6 +1,11 @@
 // overriding/additional styles for theme
 .navbar.header {
-    border: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 4px;
+    border-left: 0;
+    border-style: solid;
+    border-color: $ioc-blue;
 }
 
 .top-nav.navbar-nav {
@@ -17,21 +22,24 @@
             }
         }
         >.active > a {
-            color: $gray-dark;
+            color: #000;
             border-color: #fff;
             background-color: #fff;
             &:hover,
             &:focus,
             &:active {
+                color: $ioc-link-dark;
                 border-color: #fff;
                 background-color: #fff;
             }
         }
     }
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    background-color: transparent;
+.navbar-default .navbar-nav > li {
+    > a:hover, > a:focus {
+        background-color: transparent;
+        color: $ioc-link-dark;
+    }
 }
 
 .navbar-form {
@@ -50,4 +58,20 @@ body {
 
 .main-nav .has-dropdown .dropdown-tertiary > li > a {
     padding: 3px 20px 3px 30px;
+}
+
+.navbar-inverse {
+    .navbar-nav > .active {
+        > a {
+            color: #000;
+            background-color: #fff;
+        }
+        > a:hover, a:focus {
+            color: $ioc-link-dark;
+        }
+    }
+
+    .navbar-link:hover {
+        color: $ioc-link-dark;
+    }
 }

@@ -1,5 +1,29 @@
 .header {
     top: 0;
+    background-image: url($ioc-himage);
+
+    .logo-area {
+        max-width: 50%;
+        @media (max-width: $screen-xs-min) {
+            max-width: 55%;
+        }
+        .logo {
+            max-width: 100%;
+        }
+        a:hover, a:focus {
+            text-decoration: none;
+            background: transparent none repeat scroll 0 0;
+        }
+        .sitename {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #555;
+            letter-spacing: -1px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
 
     .admin-title {
         margin: 13px 10px 5px 0;
@@ -8,12 +32,12 @@
             margin-top: 10px;
         }
         .admin-site {
-            color: #FFFFFF;
+            color: $ioc-link;
             font-family: $font-family-serif;
             font-size: 18px;
             &:focus,
             &:hover {
-                color: $brand-primary-light;
+                color: $ioc-link-dark;
             }
         }
     }

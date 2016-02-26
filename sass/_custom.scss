@@ -14,11 +14,18 @@ a,
     &:hover,
     &:focus {
         color: $brand-primary-dark;
+        background: #fff none repeat scroll 0 0;
     }
 }
 .list-group-item-heading a:hover .metadata,
 .list-group-item-heading a:focus .metadata {
     color: $brand-primary-dark;
+}
+
+.list-group {
+    .sidebar-content {
+        padding: 10px 15px;
+    }
 }
 
 // panels
@@ -34,7 +41,7 @@ body.admin {
         margin-bottom: 0px;
     }
     .navbar-default {
-        background-color: $gray;
+        background-color: $ioc-header-bgcolor;
 
         &.minor-nav { // minor-nav.scss
             background-color: transparent;
@@ -43,6 +50,14 @@ body.admin {
 
     .main {
         padding-top: 20px;
+    }
+
+    .footer {
+        border-top: 1px solid $footer-border-color;
+        .footer-inner {
+            background-color: transparent;
+            border: 0;
+        }
     }
 }
 .header { // _header.scss
@@ -62,6 +77,9 @@ body.admin {
     }
 }
 
+.footer.container {
+    border-top: 1px solid $footer-border-color;
+}
 
 // headings in journals
 .myblogs {
@@ -76,5 +94,27 @@ body.admin {
     }
     .list-group-item-heading {
         font-family: $font-family-serif;
+    }
+}
+
+.btn-primary {
+    &.btn {
+        background-image: linear-gradient(to bottom, #0070A8, $btn-primary-bg);
+    }
+
+    &.active,
+    &.focus,
+    &:hover,
+    &:active {
+        background-color: $btn-primary-bg;
+        background-image: none;
+    }
+}
+
+.form-group .submitcancel.cancel {
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
     }
 }

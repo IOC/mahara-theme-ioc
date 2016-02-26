@@ -6,6 +6,7 @@
 
     > .container {
         background-color: $brand-primary-light;
+        background-image: url($ioc-bgimage);
         padding-left: 0;
         padding-right: 0;
     }
@@ -29,7 +30,7 @@
                 }
 
                 &:hover {
-                    color: $gray-dark;
+                    color: $ioc-link-dark;
                     background-color: $brand-primary-faint;
                 }
             }
@@ -37,7 +38,7 @@
 
         > .active > a,
         > .active > a:hover {
-            color: $gray-dark;
+            color: #000;
             background-color: #fff;
         }
     }

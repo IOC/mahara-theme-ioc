@@ -17,3 +17,9 @@ legend.panel-heading {
         font-family: $font-family-sans-serif;
     }
 }
+
+.panel-default {
+    .panel-heading {
+        color: #000;
+    }
+}
