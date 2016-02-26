@@ -14,11 +14,18 @@ a,
     &:hover,
     &:focus {
         color: $brand-primary-dark;
+        background: #fff none repeat scroll 0 0;
     }
 }
 .list-group-item-heading a:hover .metadata,
 .list-group-item-heading a:focus .metadata {
     color: $brand-primary-dark;
+}
+
+.list-group {
+    .sidebar-content {
+        padding: 10px 15px;
+    }
 }
 
 // panels
@@ -27,6 +34,7 @@ a,
     border-left: 0;
     background-color: transparent;
 }
+
 .loading-inner {
     background: transparent;
     .icon-spinner {

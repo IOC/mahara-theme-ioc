@@ -1,8 +1,10 @@
 // overriding/additional styles for theme
 body {
     background-color: $brand-primary;
+    background-image: url($ioc-bgimage);
     > .container {
         background-color: #fff;
+        background-image: url($ioc-bgimage);
     }
 }
 
