@@ -17,6 +17,13 @@ a,
         background: #fff none repeat scroll 0 0;
     }
 }
+.pagination > li.active {
+    span,
+    span:hover {
+        color: $mahara-dark-grey;
+        border: 1px solid #ddd;
+    }
+}
 .list-group-item-heading a:hover .metadata,
 .list-group-item-heading a:focus .metadata {
     color: $brand-primary-dark;
