@@ -204,8 +204,8 @@ $btn-default-bg:                 #F9F9F9;
 $btn-default-border:             #ccc;
 
 $btn-primary-color:              #fff;
-$btn-primary-bg:                 #0038A8;
-$btn-primary-border:             darken($btn-primary-bg, 5%);
+$btn-primary-bg:                 darken($ioc-blue, 10%);
+$btn-primary-border:             darken($ioc-blue, 15%);
 
 $btn-success-color:              #fff;
 $btn-success-bg:                 $brand-success;

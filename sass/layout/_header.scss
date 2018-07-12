@@ -1,14 +1,35 @@
 .header {
     top: 0;
-    background-image: url($ioc-himage);
-
+    .navbar-main {
+        border-bottom: 4px solid #009CDA;
+        background-image: url($ioc-himage);
+        .container {
+            height: 60px;
+        }
+    }
+    .navbar-form {
+        &.navbar-collapse {
+            top: 13px;
+        }
+    }
+    .nav-toggle-area {
+        position: absolute;
+        top: 13px;
+        right: 0;
+        padding: 0;
+        button {
+            color: $ioc-link;
+        }
+    }
     .logo-area {
         max-width: 50%;
+        line-height: 60px;
         @media (max-width: $screen-xs-min) {
             max-width: 55%;
         }
         .logo {
             max-width: 100%;
+            margin: 0;
         }
         a:hover, a:focus {
             text-decoration: none;
@@ -22,6 +43,20 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
+        }
+    }
+
+    .topright-menu {
+        padding-top: 13px;
+        .login-link {
+            a {
+                color: $ioc-link;
+                border-radius: 2px;
+                &:hover {
+                    color: #fff;
+                    background-color: $ioc-link;
+                }
+            }
         }
     }
 

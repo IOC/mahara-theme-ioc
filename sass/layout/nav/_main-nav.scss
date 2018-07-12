@@ -24,42 +24,105 @@
     }
 }
 
-body.admin {
-    .navbar-default {
-        background-color: lighten($gray, 7%);
-        border-color: lighten($gray, 7%);
-        .navbar-toggle {
-            &:focus,
-            &:hover {
-                background-color: darken($gray, 2%);
+body {
+    .navbar-main {
+        .navbar-nav {
+            > li,
+            > .active {
+                > a {
+                    color: $ioc-link;
+                    &:hover {
+                        background-color: darken($ioc-blue, 2%);
+                    }
+                }
+                > a:hover + .navbar-showchildren {
+                    .icon {
+                        color: #fff;
+                    }
+                }
+                > .navbar-showchildren {
+                    height: 31px;
+                    padding: 0;
+                    background-color: transparent;
+                    &:hover,
+                    &[aria-expanded="true"] {
+                        background-color: transparent;
+                    }
+                    .icon {
+                        color: #555;
+                    }
+                }
+                > .child-nav {
+                    > li {
+                        > a {
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            > .active {
+                > a {
+                    color: #fff;
+                    background-color: darken($ioc-blue, 2%);
+                }
+                > .navbar-showchildren {
+                    .icon {
+                        color: #fff;
+                    }
+                }
             }
         }
-        .navbar-collapse {
-            border-color: lighten($gray, 7%);
+    }
+}
+
+.nav-toggle-area {
+    .navbar-toggle {
+        &:focus,
+        &:hover {
+            background-color: darken($ioc-blue, 2%);
+            color: #fff;
         }
     }
+    .navbar-collapse {
+        border-color: lighten($ioc-blue, 7%);
+    }
+}
+
+body.admin {
     .navbar-main {
         .navbar-nav > li > a {
-            border-color: lighten($gray, 10%);
-            background-color: lighten($gray, 7%);
             &:focus,
             &:hover {
-                background-color: darken($gray, 9%);
+                background-color: darken($ioc-blue, 9%);
+                & + .navbar-showchildren {
+                    color: #fff;
+                }
+            }
+        }
+        .active > a {
+            background-color: darken($ioc-blue, 9%);
+            & + .navbar-showchildren {
+                background-color: transparent;
+                .icon {
+                    color: #fff;
+                }
             }
         }
         .navbar-showchildren {
-            background-color: lighten($gray, 60%);
-            color: $gray-dark;
+            background-color: lighten($ioc-blue, 60%);
+            color: #fff;
             &.collapsed {
               background-color: transparent;
-              color: #FFFFFF;
+              color: $ioc-link;
             }
         }
         .child-nav li > a {
-            background-color: lighten($gray, 60%);
+            background-color: lighten($ioc-blue, 60%);
             &:focus,
             &:hover {
-                background-color: lighten($gray, 58%);
+                background-color: lighten($ioc-blue, 58%);
             }
         }
     }
